@@ -18,10 +18,10 @@ set (BUILD_DIR ${CMAKE_SOURCE_DIR}/build)
 set (SRC_DIR ${CMAKE_SOURCE_DIR}/src)
 
 if(${CLIENT_SIDE_BUILD})
-    set (NODE_MODULES_DIR "${CMAKE_SOURCE_DIR}/../../")
+    set (NODE_MODULES_DIR "${CMAKE_SOURCE_DIR}/../../../../../../node_modules")
     set (COMMON_SRC_DIR "${CMAKE_SOURCE_DIR}/../Common")
 else()
-    set (NODE_MODULES_DIR "../node_modules")
+    set (NODE_MODULES_DIR "../../../../../node_modules")
     set (COMMON_SRC_DIR "${SRC_DIR}/main/Common")
 endif()
 
